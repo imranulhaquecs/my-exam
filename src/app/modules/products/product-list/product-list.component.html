@@ -3,6 +3,8 @@
 <div class="container mt-5">
     <h1 class="text-center mb-4">Product Info</h1>
 
+    <input class="form-control" type="text" placeholder="Search by product name..." [(ngModel)]="searchTerm" (input)="searchProducts()" /><br>
+
 <table class="table table-striped">
     <thead>
       <tr>

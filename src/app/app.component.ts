@@ -21,4 +21,8 @@ export class AppComponent {
     this.router.navigate(['products/list']);
   }
 
+  onHome() {
+    this.router.navigate(['']);
+  }
+
 }

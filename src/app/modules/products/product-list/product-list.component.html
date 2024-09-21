@@ -5,6 +5,10 @@
 
     <input class="form-control" type="text" placeholder="Search by product name..." [(ngModel)]="searchTerm" (input)="searchProducts()" /><br>
 
+    <select [(ngModel)]="selectedCategory" (change)="filterByCategory()" class="form-control">
+      <option *ngFor="let category of categories">{{ category }}</option>
+    </select><br>
+
 <table class="table table-striped">
     <thead>
       <tr>
